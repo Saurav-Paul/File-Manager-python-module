@@ -5,17 +5,17 @@ arrange_keys = ['ar' , 'arrange']
 remove_empty_folder_keys = ['remove_empty_folder','ref']
 def start():
     
-    parser = argparse.ArgumentParser(description='Manage your files.')
+    parser = argparse.ArgumentParser(description='Manage your files . Command availavble: [arrange] [ref] [-h]')
     parser.add_argument('action',help='Enter you action')
     arg = parser.parse_args()
     action = arg.action
 
     if action in arrange_keys:
         file_arranger()
-    if action in remove_empty_folder_keys:
+    elif action in remove_empty_folder_keys:
         r_e_f(os.getcwd())
     else:
-        print("wrong")
+        print("wrong arguments")
 
 if __name__ == "__main__":
     start()
