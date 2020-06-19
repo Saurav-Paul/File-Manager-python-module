@@ -53,7 +53,10 @@ def file_organizer() :
     image_formats = {'jpeg','png','gif','tiff','tif','bmp','jpg','raw'}
     Fname = ['videos','audios','pictures']
     ex = find_files()
-    ex.remove('py')
+    try :
+        ex.remove('py')
+    except:
+        pass
     create_dir(ex,video_formats,audio_formats,image_formats,Fname)
     arrange_files(ex,video_formats,audio_formats,image_formats,Fname)
 

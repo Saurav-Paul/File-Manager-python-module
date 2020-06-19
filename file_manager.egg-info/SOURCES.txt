@@ -1,0 +1,15 @@
+README.md
+about/__about__.py
+about/__init__.py
+commands/__init__.py
+commands/file_arranger.py
+commands/file_extractor.py
+commands/file_organizer.py
+commands/removing_emptyfolder.py
+file_manager.egg-info/PKG-INFO
+file_manager.egg-info/SOURCES.txt
+file_manager.egg-info/dependency_links.txt
+file_manager.egg-info/entry_points.txt
+file_manager.egg-info/top_level.txt
+run/__init__.py
+run/run.py
